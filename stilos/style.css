@@ -29,16 +29,35 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: 622px;
+    height: 627px;
     width: 311px;
-    background: blue url('../imagens/frame-iphone.png') no-repeat ;
+    background: url('../imagens/frame-iphone.png') no-repeat ;
 }
 
 iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
    
+}
+
+section#redes-sociais {
+    text-align:right ;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;    
+    border-radius: 50%;/*Isso funciona pra pegar as imagens das redes sociais que estavam quadradas em redondas na tela*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637); 
+    transform: translate(-3px, -3px);/*quando passar o mouse em cima, ele vai dar uma levantadinha*/   
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);/* A somra aparece na levantadinha de cima*/
+    transition: transform 0.3s, border 1s;/*/A transição do mouse de um icone para outro e o border deste elemento vai aparecer*/
 }
